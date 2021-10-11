@@ -5,7 +5,7 @@ import PiggyBank from './PiggyBank';
 
 function App() {
   return (
-    <PiggyBank title="Savings Pig"/>
+    <PiggyBank title="Savings Pig" depositAmount={5}/>
   );
 }
 
