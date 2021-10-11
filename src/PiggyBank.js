@@ -10,12 +10,16 @@ const PiggyBank = ({title, depositAmount}) => {
         setTotal(total + depositAmount);
     }
 
+    const withdraw = () => {
+        setTotal(total - depositAmount);
+    }
+
     return (
     <>   
         <h1>{title}</h1>
         <p>The total is: {total}</p>
         <button onClick={() => deposit()}>Deposit</button>
-        <button>Withdraw</button>
+        <button onClick={() => withdraw()}>Withdraw</button>
     </>    
     )
 }
